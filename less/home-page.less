@@ -2,8 +2,7 @@
 
 .home {
   @media @phone {
-    width: 65%;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .intro {
@@ -15,9 +14,6 @@
       padding: 0 15px;
     }
     @media @phone {
-      h2 {
-        font-size: 20%;
-      }
     }
   }
 
@@ -31,6 +27,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
     }
     @media @phone {
       .launch {
@@ -67,7 +66,9 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      padding: 5px;
+    }
     .walk-text {
       width: 50%;
 
@@ -84,8 +85,10 @@
         .space(10px, 20px);
 
         @media @phone {
-          width: 50%;
-          font-size: 5rem;
+          width: 100%;
+          font-size: 3rem;
+          padding: 5px 100px 0px 100px;
+          text-align: center;
         }
 
         &:hover {
@@ -102,6 +105,10 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+          width: 100%;
+          display: block;
+        }
       }
     }
   }
