@@ -5,13 +5,27 @@
     font-size: 5rem;
     margin: 10px 0px;
     text-align: center;
+    @media @phone {
+      font-size: 4em;
+      margin: 0px 0px 0px 0px;
+    }
   }
 
   nav {
     .center-flex();
+    @media @phone {
+      display: flex;
+      flex-flow: nowrap;
+      margin: 0;
+    }
   }
 
   a {
     .links();
+    @media @phone {
+      width: 75%;
+      padding: 10px 10px;
+      font-size: 2em;
+    }
   }
 }
